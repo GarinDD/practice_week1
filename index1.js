@@ -41,15 +41,122 @@
 //  }
 
 
-function cached() {
-    const cache = {}
-    return function fib(n) {
-if (cache[n]) return cache[n]
-        if (n<=1) {
-    } else {
-    let res = fib(n - 1) + fib(n - 2)
-    cache[n] = res
-    return res
-    }
- }
-}
+// function cached() {
+//     const cache = {}
+//     return function fib(n) {
+// if (cache[n]) return cache[n]
+//         if (n<=1) {
+//     } else {
+//     let res = fib(n - 1) + fib(n - 2)
+//     cache[n] = res
+//     return res
+//      }
+//     }
+
+// }
+
+
+// Запрашивать данные у пользователя необходимо с помощью
+// prompt(), а выводить результат с помощью alert().
+// 1
+// let userdata = prompt(`Enter the username`)
+// alert(userdata)
+
+// Запросите у пользователя его имя и выведите в ответ:
+// // «Привет, его имя!».
+// let greetings = prompt(`Please state your name here: `)
+// alert(`Hello, ${greetings}`)
+
+// 2
+// Запросите у пользователя год его рождения, посчитайте,
+// сколько ему лет и выведите результат. Текущий год укажите
+// в коде как константу.
+
+// let yearOfBirth = +prompt(`Enter your year of birth`)
+// const currentYear = 2023
+// result = currentYear - yearOfBirth
+// alert(`You are ${result} years old`)
+
+// 3
+// Запросите у пользователя длину стороны квадрата и вы-
+// ведите периметр такого квадрата.
+// let length = +prompt(`Enter the length of one side of the square`)
+// perimeter = length * 4
+// alert(`The perimeter is: ${perimeter}`)
+
+// 4
+// Запросите у пользователя радиус окружности и выведите
+// площадь такой окружности.
+
+// let radius = +prompt(`Enter the radius of the circle: `)
+// area = (radius**2)* 3.14
+// alert(`The area of the circle is the following: ${area}`)
+
+// 5
+// Запросите у пользователя расстояние в км между двумя
+// городами и за сколько часов он хочет добраться. Посчи-
+// тайте скорость, с которой необходимо двигаться, чтобы
+// успеть вовремя.
+
+// let distance = +prompt(`Enter the distance between the cities in km`)
+// let time = +prompt(`Enter the time in hours you need to arrive to the desired city`)
+
+// speed = distance * time
+// alert(`You need to drive at the of ${speed} km/h to reach your destination`)
+
+// 6
+// Реализуйте конвертор валют. Пользователь вводит долла-
+// ры, программа переводит в евро. Курс валюты храните в
+// константе.
+
+
+// let usdToEur = +prompt(`Enter the amount of USD that you want to convert to EUR`)
+// const eur = 0.93
+// ratio = usdToEur / eur
+// alert(`You have ${ratio} EUR`)
+
+// 7
+// Пользователь указывает объем флешки в Гб. Программа
+// должна посчитать сколько файлов размером в 820 Мб по-
+// мещается на флешку.
+// 1
+
+// let space = +prompt(`Enter the amount of gb in your flash-drive`)
+// const gb = 1000
+// fileAmount = (space * gb) / 820
+// alert(`You can upload ${fileAmount} sized 820 each`)
+
+// Пользователь вводит сумму денег в кошельке и цену одной
+// шоколадки. Программа выводит сколько шоколадок может
+// купить пользователь и сколько сдачи у него останется.
+
+// let sum = +prompt(`Enter the number of the available funds`)
+// let price = +prompt(`Enter the price of the chocolate bar`)
+// amout = sum / price
+// change = sum % price 
+// alert(`You can buy ${Math.floor(amout)} bars and still have ${change} dollars`)
+
+// Запросите у пользователя трехзначное число и выведите
+// его задом наперед. Для решения задачи вам понадобится
+// оператор % (остаток от деления).
+
+let enter = +prompt(`Enter a 3 digit integer`)
+
+
+
+// 10 Запросите у пользователя целое число и выведите в ответ,
+// четное число или нет. В задании используйте логические
+// операторы. В задании не надо использовать if или switch.
+
+// let enterNum = +prompt(`Enter an integer`)
+// switch(enterNum % 2) {
+//     case 0:   
+//       alert(`The number is even`);
+//       break;
+  
+//     default:
+//       alert(`The number is odd`);
+//       break;
+//   }
+
+
