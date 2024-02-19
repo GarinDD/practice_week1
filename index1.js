@@ -140,8 +140,8 @@
 // его задом наперед. Для решения задачи вам понадобится
 // оператор % (остаток от деления).
 
-let enter = +prompt(`Enter a 3 digit integer`)
-
+// let enter = prompt(`Enter a super-big digit integer`)
+// alert(enter.split().reverse().join())
 
 
 // 10 Запросите у пользователя целое число и выведите в ответ,
@@ -160,3 +160,86 @@ let enter = +prompt(`Enter a 3 digit integer`)
 //   }
 
 
+// Week 2
+
+// Вам необходимо самостоятельно решить, для какого задания
+// какой оператор ветвления лучше использовать: if, switch или
+// тернарный.
+// 1
+// Запросить у пользователя его возраст и определить, кем он
+// является: ребенком (0–12), подростком (12–18), взрослым
+// (18_60) или пенсионером (60– ...).
+
+// age = +prompt(`Enter the age`)
+// const string = (age > 0 && age <= 12) ? `You're an infant on an ipad, go to sleep` : 
+//                (age > 12 && age <= 18) ? `You're a teenager` : 
+//                (age > 18 && age <= 60) ? `You're an adult` : 
+//                `You're a senior person`
+// alert(string)
+
+// 2
+// Запросить у пользователя число от 0 до 9 и вывести ему
+// спецсимвол, который расположен на этой клавише (1–!,
+// 2–@, 3–# и т. д).
+
+// let num = +prompt(`Enter a number ranging from 0 to 9`)
+// switch(num) {
+//         case 0:   
+//           alert(`)`);
+//           break;
+//           case 1:   
+//           alert(`!`);
+//           break;
+//           case 2:   
+//           alert(`@`);
+//           break;
+//           case 3:   
+//           alert(`#`);
+//           break;
+//           case 4:   
+//           alert(`$`);
+//           break;
+//           case 5:   
+//           alert(`%`);
+//           break;
+//           case 6:   
+//           alert(`^`);
+//           break;
+//           case 7:   
+//           alert(`&`);
+//           break;
+//           case 8:   
+//           alert(`*`);
+//           break; 
+//           case 9:   
+//           alert(`(`);
+//           break;
+//         default:
+//           alert(`Wrong input data`);
+//           break;
+//       }
+
+// 3
+// Запросить у пользователя трехзначное число и проверить,
+// есть ли в нем одинаковые цифры.
+let number = +prompt(`Enter a three digit number`)
+alert(number.split().compare().join())
+
+
+
+// 4
+
+
+// Запросить у пользователя год и проверить, високосный он
+// или нет. Високосный год либо кратен 400, либо кратен 4 и
+// при этом не кратен 100
+
+let year = +prompt(`Enter the year in YYYY format`)
+if (year % 400 == 0) || (year % 4 == 0 && year % 100 !==0 )
+// 5
+// Запросить у пользователя пятиразрядное число и опреде-
+// лить, является ли оно палиндромом.
+// 6
+// Написать конвертор валют. Пользователь вводит количе-
+// ство USD, выбирает, в какую валюту хочет перевести: EUR,
+// UAN или AZN, и получает в ответ соответствующую сумму.
